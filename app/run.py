@@ -50,7 +50,7 @@ def tokenize(text):
 
 # load data
 
-database_filepath = "../data/disaster_response_db.db"
+database_filepath = "../data/hospital_response_db.db"
 engine = create_engine('sqlite:///' + database_filepath)
 table_name = os.path.basename(database_filepath).replace(".db","") + "_table"
 df = pd.read_sql_table(table_name, engine)
